@@ -1,0 +1,132 @@
+					name:ahmed magdy kamel
+
+
+
+
+Q1
+x= int(input("please enter your birth year  " ))
+y=2020-x
+print ("you are ",y, "years old")
+-----------------------------------------------------
+Q2
+number = int(input("Please Enter any Number: "))
+total = 0
+
+for value in range(1, number + 1):
+    total = total + value
+
+average = total / number
+
+print("The Sum of Natural Numbers from 1 to {0} =  {1}".format(number, total))
+print("Average of Natural Numbers from 1 to {0} =  {1}".format(number, average))
+---------------------------------------------------------
+Q3:
+
+def triangle(n):
+	k = n - 1
+
+	for i in range(0, n):
+	
+		for j in range(0, k):
+			print(end=" ")
+
+		k = k - 1
+	
+		for j in range(0, i+1):
+		
+			print("* ", end="")
+	
+		print("\r")
+
+n=int(input("please enter the pyramid hieght "))
+triangle(n)
+
+
+----------------------------------------------------------
+Q4
+number = int(input(" Please Enter any Integer Value : "))
+
+if(number % 2 == 0):
+    print("{0} is an Even Number".format(number))
+else:
+    print("{0} is an Odd Number".format(number))
+------------------------------------------------------------
+Q5:
+string = input("Enter any string: ")
+if string == 'x':
+    exit();
+else:
+    newstr = string;
+    vowels = ('a', 'e', 'i', 'o', 'u');
+    for x in string.lower():
+        if x in vowels:
+            newstr = newstr.replace(x,"");
+    print("New string after successfully removed all the vowels:");
+    print(newstr);
+---------------------------------------------------------------------
+Q7:
+def sum(numbers):
+    total = 0
+    for x in numbers:
+        total += x
+    return total
+print(sum((2, 6, 9, 7, 0)))
+------------------------------------------------------------------
+Q8:
+list1 = [3, 9, 5, 4, 5, 18, 7, 18,19]
+  
+for num in list1:
+      
+    if num % 2 == 0:
+       print(num, end = " ")
+---------------------------------------------------------------
+Q9
+class IOString():
+    def __init__(self):
+        self.str1 = ""
+
+    def get_String(self):
+        self.str1 = input()
+
+    def print_String(self):
+        print(self.str1.upper())
+
+str1 = IOString()
+str1.get_String()
+str1.print_String()
+
+
+-----------------------------------------------------------------
+Q10
+
+
+# Function to calculate speed
+def cal_speed(dist, time):
+	print(" Distance(km) :", dist);
+	print(" Time(hr) :", time);
+	return dist / time;
+
+# Function to calculate distance traveled
+def cal_dis(speed, time):
+	print(" Time(hr) :", time) ;
+	print(" Speed(km / hr) :", speed);
+	return speed * time;
+
+# Function to calculate time taken
+def cal_time(dist, speed):
+	print(" Distance(km) :", dist);
+	print(" Speed(km / hr) :", speed);
+	return speed * dist;
+
+print(" The calculated Speed(km / hr) is :",
+					cal_speed(45, 2.0 ));
+
+print(" The calculated Distance(km) :",
+				cal_dis(62, 2.5));
+
+print(" The calculated Time(hr) :",
+			cal_time(48.0, 4.5));
+
+
+
+
